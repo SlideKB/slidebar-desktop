@@ -1,0 +1,29 @@
+{
+  "name": "slidebar-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewiscowper/slidebar-desktop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewiscowper/slidebar-desktop/issues"
+  },
+  "homepage": "https://github.com/lewiscowper/slidebar-desktop#readme",
+  "devDependencies": {
+    "electron": "^1.6.6",
+    "electron-is": "^2.4.0",
+    "electron-prebuilt-compile": "^1.6.2",
+    "electron-settings": "^3.0.14",
+    "express": "^4.15.2",
+    "standard": "^10.0.2"
+  }
+}
