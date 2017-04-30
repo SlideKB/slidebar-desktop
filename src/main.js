@@ -5,6 +5,10 @@ const { app, BrowserWindow } = require('electron')
 const is = require('electron-is')
 
 if (is.dev()) {
+  console.time('startup time')
+}
+
+if (is.dev()) {
   const { enableLiveReload } = require('electron-compile')
   // Module to enable live reload.
 
@@ -28,6 +32,10 @@ const createWindow = () => {
     protocol: 'file:',
     slashes: true
   }))
+
+  if (is.dev()) {
+    console.timeEnd('startup time')
+  }
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
