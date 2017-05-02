@@ -2,8 +2,9 @@
   "name": "slidebar-desktop",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "src/electron/main.js",
   "scripts": {
+    "build": "webpack --config src/webpack.config.js",
     "start": "electron .",
     "test": "standard"
   },
@@ -17,13 +18,29 @@
   "bugs": {
     "url": "https://github.com/lewiscowper/slidebar-desktop/issues"
   },
+  "browserslist": [
+    "Chrome 56"
+  ],
   "homepage": "https://github.com/lewiscowper/slidebar-desktop#readme",
   "devDependencies": {
-    "electron": "^1.6.6",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "electron": "1.6.6",
     "electron-is": "^2.4.0",
     "electron-prebuilt-compile": "^1.6.2",
     "electron-settings": "^3.0.14",
     "express": "^4.15.2",
-    "standard": "^10.0.2"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-title-component": "^1.0.1",
+    "redux": "^3.6.0",
+    "standard": "^10.0.2",
+    "style-loader": "^0.16.1",
+    "styled-components": "^1.4.5",
+    "webpack": "^2.4.1"
   }
 }
