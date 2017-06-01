@@ -8,13 +8,6 @@ if (is.dev()) {
   console.time('startup time')
 }
 
-if (is.dev()) {
-  const { enableLiveReload } = require('electron-compile')
-  // Module to enable live reload.
-
-  enableLiveReload()
-}
-
 const path = require('path')
 const url = require('url')
 
@@ -53,6 +46,13 @@ const createWindow = () => {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
+  // if (is.dev()) {
+  //   const { enableLiveReload } = require('electron-compile')
+  //   // Module to enable live reload.
+  // 
+  //   enableLiveReload()
+  // }
+
   createWindow()
 })
 
